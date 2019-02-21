@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
+import {Component, Output, EventEmitter, ContentChildren, QueryList, AfterContentInit, Input} from '@angular/core';
 import { WizardStepComponent } from './wizard-step.component';
 
 @Component({
