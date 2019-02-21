@@ -7,7 +7,7 @@
     "test": "karma start karma.conf.js",
     "prepublish": "tsc",
     "tsc": "tsc",
-    "postinstall": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
