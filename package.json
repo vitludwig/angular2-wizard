@@ -6,7 +6,8 @@
     "lint": "tslint src/**/*.ts",
     "test": "karma start karma.conf.js",
     "prepublish": "tsc",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
