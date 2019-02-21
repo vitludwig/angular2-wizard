@@ -53,7 +53,7 @@ export class AppModule { }
 Once your library is imported, you can use form-wizard and wizard-step components in your Angular application:
 
 ```xml
-<form-wizard>
+<form-wizard [prevText]="'Custom previous'" [nextText]="'Custom next'" [doneText]="'Custom done'">
   <wizard-step [title]="'Step1'" [isValid]="emailForm.form.valid" (onNext)="onStep1Next($event)">
     <h1>Step1</h1>
     <form #emailForm="ngForm">
@@ -83,6 +83,11 @@ Once your library is imported, you can use form-wizard and wizard-step component
   </wizard-step>
 </form-wizard>
 ```
+##Custom text
+To customize buttons text, add attribute to `<form-wizard>` element:
+- prevText: Previous button text (default: 'Previous')
+- nextText: Next button text (default: 'Next')
+- doneText: Done button text (default: 'Done')
 
 ## Document
 https://github.com/maiyaporn/angular2-wizard/wiki
